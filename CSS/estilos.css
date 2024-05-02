@@ -2,20 +2,34 @@ html {
 h2 {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    background-color: rgb(51, 51, 48);
+    height: 50px;
 
 }
-header
+.encabezado
  {
-    background-color: gray;
+    display: flex;
+    justify-content: baseline;
+    height: 120px;
+    background-color: black;
+    padding: 15px;
+    align-items: center;
+
+}
+.claqueta1 {
+    display: flex ;
+    height: 70px;
+    align-items: end;
 }
 p
  {
-    font-size: medium;
+    font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 video {
     height: 200px;
+    width: 100%;
+
 
 }
 img {
@@ -26,6 +40,10 @@ body {
     position: relative;
     padding-bottom: 6em;
     min-height: 100vh;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 head img {
     height: 10px;
@@ -42,3 +60,65 @@ form {
     background-color: gray;
     position: absolute;
 }
+.video1 {
+    width: 400px;
+    height: 300px;
+    display: grid;
+ grid-template-columns: max-content;
+ border-radius: 15px;
+
+}
+.imagen1 {
+    width: 400px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: max-content;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.video5 {
+    width: 100%;
+    object-fit: cover;
+}
+.contenedor {
+    display: flex;
+  justify-content: space-around;
+}
+.contenedor2 {
+    display: flex;
+ justify-content: space-around;
+}
+a {
+    text-decoration: none;
+    color: white;
+    height: 30px;
+    padding-right: 300px;
+}
+a:hover {
+    color: gray;
+}
+.link:hover {
+color: beige;
+}
+.perfil {
+    border-radius: 10px;
+    height: 300px;
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+}
+.columnas {
+ flex: 15%;
+ padding: 20px;
+}
+.columnas img {
+    margin-top: 20px;
+}
+@media (max-width: 100px) 
+    .columnas {
+        flex: 50%;
+    }
+    .galeriavideos{
+        width: 100%;
+    }
