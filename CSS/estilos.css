@@ -12,7 +12,7 @@ h2 {
  {
     display: flex;
     justify-content: baseline;
-    height: 120px;
+     min height: 120px;
     background-color: black;
     padding: 15px;
     align-items: center;
@@ -20,7 +20,7 @@ h2 {
 }
 .claqueta1 {
     display: flex ;
-    height: 70px;
+    min height: 70px;
     align-items: end;
 }
 p
@@ -161,7 +161,7 @@ color: beige;
         grid-template-columns: repeat(3,1fr);
     }
    }
-   .@media (min-width: 100px) {
+   @media (min-width: 100px) {
     .galeriavideos{
         grid-template-columns: repeat(1,1fr);
     }
@@ -210,4 +210,13 @@ color: beige;
 }
 img:hover{
     color: grey;
+}
+@media (max-width: 700px) {
+    .encabezado {
+        flex-direction: column;
+       justify-content: center;
+    }
+    .claqueta1 {
+        height: 200px;
+    }
 }
