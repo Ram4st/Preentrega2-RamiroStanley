@@ -1,0 +1,4 @@
+1- instale node y vincule el css con el scss
+2- agregué algunas animaciones de escala a las fotos y videos
+3- todas las páginas responsivas con uso de media querys
+4- 
