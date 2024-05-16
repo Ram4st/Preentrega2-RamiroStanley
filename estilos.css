@@ -1,0 +1,240 @@
+html h2 {
+  background-image: radial-gradient(circle, #f8f4f8, #efecf0, #e6e4e8, #dedce1, #d5d4d9, #cdcdd2, #c4c6cb, #bcbfc4, #b3b7bb, #aaafb1, #a2a7a8, #9b9f9f);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 50px;
+}
+html .encabezado {
+  display: flex;
+  justify-content: baseline;
+  min-height: 120px;
+  background-color: black;
+  padding: 15px;
+  align-items: center;
+}
+html .claqueta1 {
+  display: flex;
+  min-height: 70px;
+  align-items: end;
+}
+html p {
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: aliceblue;
+}
+html video {
+  width: 100%;
+}
+html body {
+  background-image: radial-gradient(circle, #020102, #0c0b0d, #141315, #1a181b, #1f1e21, #26262a, #2e2f32, #36383b, #434648, #525456, #616363, #717272);
+  background-color: gray;
+  position: relative;
+  padding-bottom: 6em;
+  min-height: 100vh;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+html head img {
+  height: 10px;
+}
+
+footer {
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+form {
+  background-color: gray;
+  position: absolute;
+}
+
+.video1 {
+  width: 400px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: max-content;
+  border-radius: 15px;
+  filter: grayscale(100%);
+}
+
+.video1:hover {
+  filter: grayscale(0%);
+  transition: 0.7s;
+}
+
+.imagen1 {
+  width: 400px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: max-content;
+  border-radius: 15px;
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid white;
+  filter: grayscale(100%);
+}
+
+.video5 {
+  width: 100%;
+  object-fit: cover;
+  border: 5px solid grey;
+  filter: grayscale(100%);
+}
+
+.imagen1:hover {
+  filter: grayscale(0%);
+  transition: 0.7s;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedor2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  height: 30px;
+  padding-right: 300px;
+}
+
+a:hover {
+  color: gray;
+  transition: 0.7s;
+}
+
+.link:hover {
+  color: beige;
+}
+
+.perfil {
+  border-radius: 10px;
+  height: 400px;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columnas {
+  flex: 15%;
+  padding: 20px;
+}
+
+.columnas img {
+  margin-top: 20px;
+}
+
+.galeriavideos {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  row-gap: 1em;
+  column-gap: 1em;
+  justify-items: center;
+}
+
+.videoelemento1 {
+  grid-column: 1/3;
+}
+
+@media (min-width: 100px) {
+  .galeriavideos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 520px) {
+  .galeriavideos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 728px) {
+  .galeriavideos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 100px) {
+  .galeriavideos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 520px) {
+  .galeriavideos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 728px) {
+  .galeriavideos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .contenedor {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .videoelemento1 {
+    grid-column: 3/5;
+    grid-row: 1/5;
+  }
+  .videoelemento2 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .videoelemento3 {
+    grid-column: 4/5;
+    grid-row: 3/5;
+  }
+  .videoelemento4 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+  }
+  .videoelemento14 {
+    grid-column: 1/3;
+  }
+  .videoelemento12 {
+    grid-column: 1/3;
+  }
+  .videoelemento9 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .videoelemento5 {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+  .videoelemento7 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
+.videoelemento6 {
+  grid-column: 4/5;
+  grid-row: 3/5;
+}
+
+img:hover {
+  color: grey;
+}
+
+@media (max-width: 700px) {
+  .encabezado {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .claqueta1 {
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
