@@ -11,24 +11,19 @@ $colorletras: aliceblue;
      {
         display: flex;
         justify-content: baseline;
-         min-height: 200px;
+         min-height: 100px;
         background-color: black;
         padding: 15px;
         position: relative;
         margin: 0;
-    align-items: baseline;
+        align-items: center;
     }
     .claqueta1 {
         display: flex ;
-        min-height: 70px;
         align-items: end;
-        @if height < 30px {
-            color: black;
-        }
     }
-    p
-     {
-        font-size: 10px;
+    p {
+        font-size: 30px;
         color: $colorletras;
     }
     video {
@@ -61,6 +56,7 @@ $colorletras: aliceblue;
     bottom: 0;
     width: 100%;
     overflow-x: hidden;
+    height: 50px;
     }
     form {
         background-color: gray;
@@ -128,8 +124,7 @@ $colorletras: aliceblue;
     a {
         text-decoration: none;
         color: white;
-        height: 30px;
-        padding-right: 300px;
+        font-size: 30px;
     }
     a:hover {
         color: gray;
@@ -236,6 +231,8 @@ $colorletras: aliceblue;
         .encabezado {
             flex-direction: column;
            justify-content: center;
+           align-items: center;
+           height: 300px;
         }
         .claqueta1 {
             height: 100px;
@@ -254,5 +251,17 @@ $colorletras: aliceblue;
         }
         
     
+    }
+    .iconos {
+        width: 50px;
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+    h1 {
+        font-size: 10px;
+    }
+    .encabezado a {
+        padding: 90px;
     }
 }
