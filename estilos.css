@@ -10,12 +10,10 @@ h2 {
 .encabezado {
   display: flex;
   justify-content: baseline;
-  min-height: 100px;
   background-color: black;
-  padding: 15px;
-  position: relative;
   margin: 0;
   align-items: center;
+  height: 200px;
 }
 
 .claqueta1 {
@@ -52,14 +50,14 @@ head img {
 }
 
 footer {
+  display: flex;
   background-color: rgb(75, 73, 73);
   text-align: center;
   position: absolute;
   bottom: 0;
   width: 100%;
-  overflow-x: hidden;
-  height: 60px;
-
+  overflow-y: hidden;
+  height: 50px;
 }
 
 form {
@@ -141,9 +139,8 @@ form {
 a {
   text-decoration: none;
   color: white;
-  font-size: 25px;
-  padding: 90px;
-margin: 0;
+  font-size: 30px;
+  margin: 0px;
 }
 
 a:hover {
@@ -269,11 +266,18 @@ img:hover {
 }
 
 @media (max-width: 700px) {
+  .encabezado a {
+    display: grid;
+    height: 50px;
+    font-size: 10px;
+    margin: 0;
+    padding: 0px;
+    align-items: baseline;
+    align-self: center;
+    grid-row: auto;
+  }
   .encabezado {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
+    height: 100px;
   }
   .claqueta1 {
     height: 100px;
@@ -292,17 +296,23 @@ img:hover {
     transition: 1s;
   }
 }
-@media (max-width: 700px) {
-  .iconos {
-    width: 50px;
-    display: flex;
-    position: relative;
-    align-items: center;
-  }
-  h1 {
-    font-size: 10px;
-  }
-  .encabezado a {
-    padding: 90px;
-  }
+.iconos {
+  width: 50px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+h1 {
+  font-size: 10px;
+}
+
+.encabezado a {
+  padding: 90px;
+}
+
+.iconos a {
+  padding: 30px;
+  margin: 30px;
+  align-items: center;
 }/*# sourceMappingURL=estilos.css.map */
